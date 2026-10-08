@@ -14,9 +14,12 @@ Live site: https://jinwoo1015.github.io/data-science-portfolio/
 
 ## Design
 
-- Dark, high contrast editorial theme: near black background, white text and a coral accent
-- Fraunces for headlines, Hanken Grotesk for body text, JetBrains Mono for labels
-- Scroll reveal animations, animated stat counters, scroll progress bar and active section highlighting in the nav
+- Dark, high contrast theme: near black background, white text and an acid lime accent
+- Bricolage Grotesque for headlines, Instrument Sans for body text, JetBrains Mono for labels
+- Generative hero: an animated data point field that reacts to the cursor
+- Bento grid of results with animated bars and stat counters, plus a scrolling tech marquee
+- Command palette (Cmd+K or Ctrl+K) to jump to any section or link
+- Cursor spotlight on cards, scroll reveal animations, scroll progress bar and active section highlighting in the nav
 - Respects `prefers-reduced-motion`
 - Accessible by default: skip link, semantic landmarks, visible keyboard focus
 - SEO ready: meta description, Open Graph tags and JSON-LD structured data
