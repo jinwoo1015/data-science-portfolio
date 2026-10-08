@@ -1,53 +1,59 @@
-# Jinwoo Choi - Data Science Portfolio
+# Jinwoo Choi, Data Science Portfolio
 
-A professional portfolio website showcasing my data science skills, projects, and experience.
+Personal portfolio for Jinwoo Choi: data scientist focused on machine learning pipelines, computer vision and analytics dashboards for sports performance. MS in Applied Data Science at the University of Chicago.
 
-## Features
+Live site: https://jinwoo1015.github.io/data-science-portfolio/
 
-- Clean, modern design with responsive layout
-- Project showcase with detailed descriptions
-- Skills visualization
-- About me section
-- Contact information
-- Resume download option
+## What is on the site
 
-## Technologies Used
+- Experience: Arizona Baseball Software Development Team, Arizona Wildcat Football Sports Science, Tamid Group Arizona Chapter
+- Projects: College Football Retention Churn Analysis (presented at SUnMaRC), play classification from broadcast video with YOLOv8, plus other analysis work
+- Toolkit: languages, ML and data, statistics, and tools
+- Education: University of Chicago and University of Arizona
+- Downloadable one page resume (`jinwoo_choi_resume.pdf`)
 
-- HTML5
-- CSS3 (with Flexbox and Grid)
-- JavaScript (vanilla)
-- Google Fonts (Inter)
+## Design
+
+- Dark, high contrast editorial theme: near black background, white text and a coral accent
+- Fraunces for headlines, Hanken Grotesk for body text, JetBrains Mono for labels
+- Scroll reveal animations, animated stat counters, scroll progress bar and active section highlighting in the nav
+- Respects `prefers-reduced-motion`
+- Accessible by default: skip link, semantic landmarks, visible keyboard focus
+- SEO ready: meta description, Open Graph tags and JSON-LD structured data
+
+## Tech
+
+Plain HTML, CSS and vanilla JavaScript. There is no build step and no dependencies. Fonts load from Google Fonts.
 
 ## Files
 
-- `index.html` - Main homepage
-- `style.css` - Stylesheet
-- `script.js` - Interactive elements
-- `jinwoo_choi_resume.pdf` - Downloadable resume
-- `README.md` - This file
+| File | Purpose |
+| --- | --- |
+| `index.html` | Page content and metadata |
+| `style.css` | Theme variables, layout and motion |
+| `script.js` | Scroll progress, reveal on scroll, stat counters, nav highlighting |
+| `jinwoo_choi_resume.pdf` | Resume download |
+| `.github/workflows/jekyll-gh-pages.yml` | GitHub Pages deployment on push to `main` |
 
-## How to View
+## Run locally
 
-Simply open `index.html` in any modern web browser to view the portfolio locally.
+```bash
+python3 -m http.server 8000
+```
+
+Then open http://localhost:8000.
+
+## Update the content
+
+1. Edit the text in `index.html`.
+2. Change colors in the `:root` block at the top of `style.css`.
+3. Replace `jinwoo_choi_resume.pdf` with the latest resume.
+4. Push to `main` and GitHub Pages redeploys.
 
 ## Deployment
 
-This portfolio can be deployed to any static hosting service such as:
-- GitHub Pages
-- Netlify
-- Vercel
-- AWS S3 + CloudFront
-- Firebase Hosting
-
-## Customization
-
-To personalize this portfolio:
-1. Update the text content in `index.html`
-2. Modify colors and styles in `style.css`
-3. Add your own projects to the projects section
-4. Replace the placeholder photo with your actual photo
-5. Update the resume file with your latest version
+The site is static, so it also works on Netlify, Vercel, Cloudflare Pages or any other static host.
 
 ## License
 
-This project is open source and available under the MIT License.
+MIT
