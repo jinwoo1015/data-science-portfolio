@@ -184,8 +184,9 @@
         <article class="card spot reveal">
           <p class="tag">Computer vision</p>
           <h3>Play Classification from Broadcast Video</h3>
-          <p>An automated pipeline that classifies collegiate football plays as pass, run or sack straight from broadcast video. YOLOv8 detects players, biomechanical features are engineered from joint coordinates, and a Random Forest is validated with leave one out cross validation to prevent data leakage.</p>
-          <ul class="chips"><li>Python</li><li>YOLOv8</li><li>Random Forest</li><li>LOOCV</li></ul>
+          <p>Classifies collegiate football plays (pass, run, sack, handoff) from standard TV broadcast video. YOLOv8 pose tracking feeds six engineered biomechanical features into a Random Forest, validated with leave one video out cross validation. An exhaustive search over all 63 feature combinations found that hip velocity alone wins, reaching 69.2% accuracy on 13 plays and identifying all 5 passes.</p>
+          <ul class="chips"><li>Python</li><li>YOLOv8</li><li>Random Forest</li><li>LOOCV</li><li>Feature Selection</li></ul>
+          <a class="more" href="https://github.com/jinwoo1015/qb-play-classification" target="_blank" rel="noopener">View repository and paper <span aria-hidden="true">&rarr;</span></a>
         </article>
 
         <article class="card wide spot reveal">
