@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jinwoo Choi | Data Scientist and Sports Analytics Engineer</title>
   <meta name="description" content="Jinwoo Choi builds machine learning pipelines, computer vision models and analytics dashboards for sports performance. MS in Applied Data Science at the University of Chicago.">
-  <meta name="theme-color" content="#0a0a0a">
+  <meta name="theme-color" content="#07080a">
   <meta name="color-scheme" content="dark">
   <link rel="canonical" href="https://jinwoo1015.github.io/data-science-portfolio/">
   <meta property="og:type" content="website">
@@ -13,11 +13,11 @@
   <meta property="og:description" content="ML pipelines, computer vision and dashboards for sports performance. MS in Applied Data Science, University of Chicago.">
   <meta property="og:url" content="https://jinwoo1015.github.io/data-science-portfolio/">
   <meta name="twitter:card" content="summary">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ff7a59'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-weight='700' text-anchor='middle' fill='%230a0a0a'%3EJC%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23c6ff3d'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='30' font-weight='800' text-anchor='middle' fill='%2307080a'%3EJC%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=2">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -39,48 +39,91 @@
   <div class="progress" aria-hidden="true"></div>
 
   <header class="nav">
-    <a class="brand" href="#top" aria-label="Jinwoo Choi, home">JC<span>.</span></a>
+    <a class="brand" href="#top" aria-label="Jinwoo Choi, home"><i></i>JC</a>
     <nav aria-label="Primary">
       <ul>
+        <li><a href="#impact">Impact</a></li>
         <li><a href="#work">Work</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Stack</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <button class="kbd" type="button" aria-label="Open command menu"><span>Jump to</span><kbd>&#8984;K</kbd></button>
   </header>
 
   <main id="main">
     <section class="hero" id="top">
-      <p class="eyebrow reveal">Chicago, IL &nbsp;/&nbsp; Open to roles in data science and ML engineering</p>
-      <h1 class="reveal">I turn messy performance data into <em>decisions</em> that coaches act on.</h1>
-      <p class="lede reveal">I'm Jinwoo Choi. I build machine learning pipelines, computer vision models and dashboards for collegiate sports, and I'm starting my MS in Applied Data Science at the University of Chicago this fall.</p>
-      <div class="cta reveal">
-        <a class="btn primary" href="#projects">See the work</a>
-        <a class="btn" href="jinwoo_choi_resume.pdf" download>Download resume</a>
-        <a class="btn ghost" href="https://github.com/jinwoo1015" target="_blank" rel="noopener">GitHub</a>
+      <canvas id="field" aria-hidden="true"></canvas>
+      <div class="hero-inner">
+        <p class="status reveal"><span class="pulse"></span>Available for data science and ML roles, starting 2027</p>
+        <h1 class="reveal"><span>Jinwoo</span><span>Choi<b>.</b></span></h1>
+        <p class="role-line reveal">Data scientist building <em>ML pipelines</em>, <em>computer vision</em> and <em>decision dashboards</em> for sports performance.</p>
+        <div class="cta reveal">
+          <a class="btn primary" href="#projects">See the work</a>
+          <a class="btn" href="jinwoo_choi_resume.pdf" download>Resume (PDF)</a>
+          <a class="btn ghost" href="https://github.com/jinwoo1015" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn ghost" href="https://linkedin.com/in/jinwoochoi1015" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <p class="meta reveal">University of Chicago, MS Applied Data Science &nbsp;/&nbsp; University of Arizona, BS Statistics and Data Science, Magna Cum Laude</p>
       </div>
+    </section>
 
-      <dl class="stats reveal" aria-label="Selected results">
-        <div><dt>Weekly reporting speed</dt><dd><span data-count="2" data-suffix="x">2x</span></dd></div>
-        <div><dt>Scouting efficiency</dt><dd><span data-count="20" data-suffix="%">20%</span></dd></div>
-        <div><dt>Cleaning time saved per week</dt><dd><span data-count="6" data-suffix=" hrs">6 hrs</span></dd></div>
-        <div><dt>Churn model ROC AUC</dt><dd><span data-count="0.754" data-decimals="3">0.754</span></dd></div>
-      </dl>
+    <div class="marquee" aria-hidden="true">
+      <div class="track">
+        <span>Python</span><span>SQL</span><span>XGBoost</span><span>YOLOv8</span><span>PyTorch</span><span>TensorFlow</span><span>Scikit-Learn</span><span>Streamlit</span><span>Plotly</span><span>Pandas</span><span>AWS</span><span>Tableau</span>
+        <span>Python</span><span>SQL</span><span>XGBoost</span><span>YOLOv8</span><span>PyTorch</span><span>TensorFlow</span><span>Scikit-Learn</span><span>Streamlit</span><span>Plotly</span><span>Pandas</span><span>AWS</span><span>Tableau</span>
+      </div>
+    </div>
+
+    <section class="section" id="impact">
+      <header class="section-head reveal">
+        <p class="kicker">01 / Impact</p>
+        <h2>Results, not just notebooks.</h2>
+      </header>
+      <div class="bento">
+        <article class="tile big spot reveal">
+          <p class="label">Churn model, College Football Retention</p>
+          <div class="bars" role="list">
+            <div role="listitem"><span>Accuracy</span><div class="bar"><i style="--w:83%"></i></div><b>83%</b></div>
+            <div role="listitem"><span>ROC AUC</span><div class="bar"><i style="--w:75.4%"></i></div><b>0.754</b></div>
+            <div role="listitem"><span>Precision</span><div class="bar"><i style="--w:67.7%"></i></div><b>0.677</b></div>
+          </div>
+          <p class="sub">XGBoost with SMOTE and stratified 5 fold CV. Presented at the SUnMaRC conference.</p>
+        </article>
+        <article class="tile spot reveal">
+          <p class="num"><span data-count="2" data-suffix="x">2x</span></p>
+          <p class="label">Weekly reporting productivity from automated Python pipelines and Streamlit dashboards</p>
+        </article>
+        <article class="tile spot reveal">
+          <p class="num"><span data-count="20" data-suffix="%">20%</span></p>
+          <p class="label">Scouting efficiency gain from a predictive hitting trend dashboard</p>
+        </article>
+        <article class="tile spot reveal">
+          <p class="num"><span data-count="6" data-suffix=" hrs">6 hrs</span></p>
+          <p class="label">Manual data cleaning removed every week for the football staff</p>
+        </article>
+        <article class="tile spot reveal">
+          <p class="num"><span data-count="50" data-suffix="+">50+</span></p>
+          <p class="label">Members connected with industry through events I organized at Tamid</p>
+        </article>
+      </div>
     </section>
 
     <section class="section" id="work">
       <header class="section-head reveal">
-        <p class="kicker">01 / Experience</p>
-        <h2>Where I've shipped</h2>
+        <p class="kicker">02 / Experience</p>
+        <h2>Where I've shipped.</h2>
       </header>
 
       <ol class="timeline">
-        <li class="role reveal">
-          <div class="when">Oct 2025<br>to May 2026</div>
+        <li class="role spot reveal">
+          <span class="idx">01</span>
           <div class="what">
-            <h3>Software Developer, Analytics</h3>
+            <div class="top">
+              <h3>Software Developer, Analytics</h3>
+              <p class="when">Oct 2025 to May 2026</p>
+            </div>
             <p class="org">Arizona Baseball Software Development Team · Tucson, AZ</p>
             <ul>
               <li>Built Streamlit and Plotly dashboards and automated the raw data pipelines behind them in Python, doubling weekly reporting productivity.</li>
@@ -89,10 +132,13 @@
             </ul>
           </div>
         </li>
-        <li class="role reveal">
-          <div class="when">Apr 2025<br>to May 2026</div>
+        <li class="role spot reveal">
+          <span class="idx">02</span>
           <div class="what">
-            <h3>Data Analytics Intern</h3>
+            <div class="top">
+              <h3>Data Analytics Intern</h3>
+              <p class="when">Apr 2025 to May 2026</p>
+            </div>
             <p class="org">Arizona Wildcat Football, Sports Science · Tucson, AZ</p>
             <ul>
               <li>Automated preprocessing for athletic tracking data with Pandas and NumPy, removing 6 hours of manual cleaning each week.</li>
@@ -102,14 +148,17 @@
             </ul>
           </div>
         </li>
-        <li class="role reveal">
-          <div class="when">Feb 2024<br>to May 2026</div>
+        <li class="role spot reveal">
+          <span class="idx">03</span>
           <div class="what">
-            <h3>Operational Manager</h3>
+            <div class="top">
+              <h3>Operational Manager</h3>
+              <p class="when">Feb 2024 to May 2026</p>
+            </div>
             <p class="org">Tamid Group, Arizona Chapter · Tucson, AZ</p>
             <ul>
               <li>Led 6 analysts through market research and financial modeling for 2 Israeli startups, from scoping to final presentation.</li>
-              <li>Synthesized large-scale market data to find competitive advantages and forecast revenue growth with quantitative models.</li>
+              <li>Synthesized large scale market data to find competitive advantages and forecast revenue growth with quantitative models.</li>
               <li>Organized networking events that connected 50+ student members with industry professionals.</li>
             </ul>
           </div>
@@ -119,32 +168,27 @@
 
     <section class="section" id="projects">
       <header class="section-head reveal">
-        <p class="kicker">02 / Projects</p>
-        <h2>Selected projects</h2>
+        <p class="kicker">03 / Projects</p>
+        <h2>Selected projects.</h2>
       </header>
 
       <div class="cards">
-        <article class="card reveal">
+        <article class="card spot reveal">
           <p class="tag">Presented at SUnMaRC</p>
           <h3>College Football Retention Churn Analysis</h3>
-          <p>An XGBoost pipeline that predicts transfer portal entries from physical tracking data. SMOTE and stratified 5-fold cross validation handle the class imbalance, and forward feature selection isolates the indicators that drive the prediction. A Plotly and Streamlit dashboard delivers the results.</p>
-          <ul class="metrics" aria-label="Model results">
-            <li><b>83%</b> accuracy</li>
-            <li><b>0.754</b> ROC AUC</li>
-            <li><b>0.677</b> precision</li>
-          </ul>
+          <p>An XGBoost pipeline that predicts transfer portal entries from physical tracking data. SMOTE and stratified 5 fold cross validation handle the class imbalance, and forward feature selection isolates the indicators that drive the prediction. A Plotly and Streamlit dashboard delivers the results.</p>
           <ul class="chips"><li>Python</li><li>XGBoost</li><li>SMOTE</li><li>Plotly</li><li>Streamlit</li></ul>
           <a class="more" href="https://github.com/jinwoo1015/-Churn-Analysis-of-College-Football-Retention" target="_blank" rel="noopener">View repository <span aria-hidden="true">&rarr;</span></a>
         </article>
 
-        <article class="card reveal">
+        <article class="card spot reveal">
           <p class="tag">Computer vision</p>
           <h3>Play Classification from Broadcast Video</h3>
-          <p>An automated pipeline that classifies collegiate football plays as pass, run or sack straight from broadcast video. YOLOv8 detects players, biomechanical features are engineered from joint coordinates, and a Random Forest is validated with leave-one-out cross validation to prevent data leakage.</p>
+          <p>An automated pipeline that classifies collegiate football plays as pass, run or sack straight from broadcast video. YOLOv8 detects players, biomechanical features are engineered from joint coordinates, and a Random Forest is validated with leave one out cross validation to prevent data leakage.</p>
           <ul class="chips"><li>Python</li><li>YOLOv8</li><li>Random Forest</li><li>LOOCV</li></ul>
         </article>
 
-        <article class="card wide reveal">
+        <article class="card wide spot reveal">
           <p class="tag">More analysis</p>
           <h3>Sprinting, trading and player performance</h3>
           <p>High intensity sprinting regression analysis. Automated trade analysis and visualization of stock market data with Random Forest. Player performance prediction with machine learning for the NFL, NBA, MLB and European soccer, built as separate projects.</p>
@@ -155,8 +199,8 @@
 
     <section class="section" id="skills">
       <header class="section-head reveal">
-        <p class="kicker">03 / Toolkit</p>
-        <h2>What I work with</h2>
+        <p class="kicker">04 / Stack</p>
+        <h2>What I work with.</h2>
       </header>
 
       <div class="skills">
@@ -177,13 +221,6 @@
           <ul class="chips"><li>Streamlit</li><li>Dash</li><li>Tableau</li><li>AWS</li><li>GitHub</li><li>Quarto</li><li>Jupyter</li><li>Google Colab</li><li>RStudio</li><li>Positron</li><li>Excel</li><li>Claude Code</li><li>Codex</li></ul>
         </div>
       </div>
-    </section>
-
-    <section class="section" id="education">
-      <header class="section-head reveal">
-        <p class="kicker">04 / Education</p>
-        <h2>Training</h2>
-      </header>
 
       <div class="edu">
         <article class="reveal">
@@ -201,24 +238,27 @@
     </section>
 
     <section class="section contact" id="contact">
-      <header class="section-head reveal">
-        <p class="kicker">05 / Contact</p>
-        <h2>Let's build something.</h2>
-      </header>
-      <p class="lede reveal">I'm looking for data science and ML roles where analysis ends in a decision. The fastest way to reach me is email.</p>
+      <p class="kicker reveal">05 / Contact</p>
+      <h2 class="reveal">Let's build something that <em>decides</em>.</h2>
+      <a class="mail reveal" href="mailto:jinwooc@uchicago.edu">jinwooc@uchicago.edu <span aria-hidden="true">&nearr;</span></a>
       <div class="cta reveal">
-        <a class="btn primary" href="mailto:jinwooc@uchicago.edu">jinwooc@uchicago.edu</a>
         <a class="btn" href="https://linkedin.com/in/jinwoochoi1015" target="_blank" rel="noopener">LinkedIn</a>
         <a class="btn" href="https://github.com/jinwoo1015" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="jinwoo_choi_resume.pdf" download>Resume (PDF)</a>
       </div>
     </section>
   </main>
 
   <footer class="foot">
-    <p>&copy; <span id="year">2026</span> Jinwoo Choi</p>
-    <p><a href="#top">Back to top</a></p>
+    <p>&copy; <span id="year">2026</span> Jinwoo Choi · Chicago, IL</p>
+    <p>Press <kbd>&#8984;K</kbd> to jump around · <a href="#top">Back to top</a></p>
   </footer>
 
-  <script src="script.js"></script>
+  <dialog class="palette" aria-label="Command menu">
+    <input type="text" placeholder="Jump to a section or link" aria-label="Search commands" autocomplete="off">
+    <ul></ul>
+  </dialog>
+
+  <script src="script.js?v=2"></script>
 </body>
 </html>
